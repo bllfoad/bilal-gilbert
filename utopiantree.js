@@ -31,6 +31,7 @@ function readLine() {
 
 function utopianTree(n) {
     let totalcounter = 0;
+    // looping using while loop to increase the counter by one evrey time
     let sumhight = 1;
     while (totalcounter <= n) {
         if(totalcounter === 0){
