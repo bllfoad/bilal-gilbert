@@ -1,0 +1,96 @@
+/*GOOGLE FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;1,500&display=swap');
+
+/*CSS RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+h2 {
+  font-size: 1.5rem;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+/*UTILITY CLASSES*/
+.container{
+    padding: 2 1.5rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+/*ABOUT*/
+#navbar{
+    background-color:#d22323;
+    color: #fff;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+}
+  #navbar ul{
+    list-style-type: none;
+    display: flex;
+}
+#navbar ul a{
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    
+}
+
+#projects{
+  display: inline-block;
+  grid-template-columns: rgb(3,1fr);
+  grid-row-gap: 4rem;
+  grid-column-gap: 2rem;
+  margin-top: 2rem;
+}
+#projects.projects-tile{
+    font-size: 1.5rem;
+}
+#projects-link{
+    font-size: 1.5rem;
+}
+#projects-image{
+    border: 1px solid #ccc;
+    width: 100%;
+    height: auto;
+}
+
+/*FOOTER SECTION*/
+#main-footer{
+  border-top: solid 4px var(--primary-color);
+  padding: 1rem;
+  background-color: #444;
+  color: #fff;
+}
+
+/*SMARTPHONE*/
+@media(max-width:600px){
+  #navbar{
+    padding: 0rem 1rem;
+    justify-content: center;
+  }
+  
+}
